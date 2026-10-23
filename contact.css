@@ -1,0 +1,104 @@
+*{   
+    margin: 0;
+    padding: 0; 
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.header{
+    height: 40vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(https://www.shutterstock.com/image-photo/panoramic-view-himalayas-mountains-mount-260nw-1714159462.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.header h1{
+    margin-top: -10px;
+}
+.text{
+    font-size: 20px;
+    margin:2%;
+}
+.below{
+    margin-left:35%;
+    margin-right:35%;
+    padding: 1%;
+    text-align: center;
+    border-radius: 10px;
+    border: 4px solid black;
+    background-color: #b2e5e7;
+}
+.forms{
+    margin: 2%;
+}
+.fill label{
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 5px;
+    background-color:#28d7b5;
+}
+.fill{
+    padding: 1%;
+    width: 200px;
+}
+.fill input{
+    margin: 5%;
+    padding: 2%;
+    font-size: 15px;
+}
+.fill textarea{
+    margin: 5%;
+}
+.reset input{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 2%;
+    cursor: pointer;
+    color: #d4fb36;
+    background-color: #306d15;
+}
+.reset input:hover{
+    color: black;
+    background-color: #f44336;
+    transition: 0.5s;
+}
